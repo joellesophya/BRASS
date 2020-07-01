@@ -53,7 +53,7 @@ int main(int argc, char **argv){
             "|                                                       |\n"
             "|             Version 1.0 - December 07, 2018           |\n"
             "|                                                       |\n"
-            "|                    Copyright(C) 2018                  |\n"
+            "|                  Copyright(C) 2018-2020               |\n"
             "|     Joelle Mbatchou, Mark Abney and Mary Sara McPeek  |\n"
             "|                                                       |\n"
             "|                        Homepage:                      |\n"

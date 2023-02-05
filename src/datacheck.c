@@ -46,8 +46,9 @@ void format_checks(char *pedfilename, struct DATA_STRUCT *data_struct) {
 //		}
 		ntotal++;
 
-		for (col=1; col < (n_cov - 1); col++) fscanf(pedfile, "%*lf ");
-		fscanf(pedfile, "%*lf\n");
+        // 5.2.23 bug fix if no covariates are present
+        for (col=1; col < n_cov; col++) fscanf(pedfile, " %*lf");
+        fscanf(pedfile, "\n");
 
 	}
 

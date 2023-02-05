@@ -38,9 +38,9 @@ void print_rep(int i_perm, struct FAMILY *family, struct HASH hash, FILE *file_o
     for (i = 1; i <= n_total; i++) {
 
         if (i_perm == 0) {
-            fprintf(file_out, "%s ", (family + fam)->indiv[i]);
+            fprintf(file_out, "%s%s", (family + fam)->indiv[i], (i == n_total ? "" : " "));
         } else {
-            fprintf(file_out, "%.17g ", (family + fam)->trait_rep[i]);
+            fprintf(file_out, "%.17g%s", (family + fam)->trait_rep[i], (i == n_total ? "" : " "));
         }
     }
     fprintf(file_out, "\n");
